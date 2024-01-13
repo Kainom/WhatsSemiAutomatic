@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+:root {
+    --primary-color: rgb(54, 106, 14);
+}
+
+:root {
+    --primary-color-dark: rgb(10, 44, 6);
+}
+
+:root {
+    --neon: rgb(0, 255, 106);
+}
+:root{
+    --error: #FC1723;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    background: black;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    color: var(--neon);
+    border: 15px double var(--neon);
+    margin-top: 5px;
+    width: 800px;
+    background: black;
+    padding: 20px;
+    border-radius: 15px;
+    height: 610px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    color: var(--neon);
+    border: 3px double var(--neon);
+    background: black;
+}
+
+form input {
+    font-size: 24px;
+    height: 43px;
+    padding: 0px 20px;
+}
+
+
+form input:focus {
+    outline: 2px double var(--primary-color);
+}
+
+
+button {
+    background: var(--neon);
+    font-size: 18px;
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 270px;
+    border-radius: 15px;
+    color: black;
+    border-color: var(--neon);
+
+}
+
+.btn:hover {
+    background: black;
+    color: var(--neon);
+    border: 2px solid ;
+}
+
+.loader {
+    width: 65px;
+    height: 65px;
+    border: solid 5px black;
+    border-top-color: var(--neon);
+    animation: is-rotating 1s infinite;
+    border-radius: 50%;
+    margin-left: 320px;
+    margin-top: 15px;
+}
+.send{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 12px;
+    color: black;
+    width: 177px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: var(--neon);
+    margin-left: 270px;
+    margin-top: 15px;
+    border-color: var(--neon);
+}
+
+::placeholder{
+    color: var(--error);
+    font-weight: 700;
+}
+@keyframes  alert{
+   
+    0%{
+        color: var(--neon);
+    }
+    20%{
+        color: var(--error);
+
+    }
+    40%{
+        color:var(--error);
+
+    }
+    60%{
+        color:var(--error);
+
+    }
+    80%{
+        color:var(--neon);
+
+    }
+    100%{
+        color: var(--neon);
+
+    }
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
